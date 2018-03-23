@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <link type="text/css" rel="stylesheet" href="mccann.css">
+
+
+	    <link rel="icon" 
+		  type="image/png" 
+		  href="/home/mccann/Dropbox/webpage2/AMCFlavicon.png">
+	      
+	      <style type="text/css">
+		body {
+		padding-top: 65px;
+		}
+
+		@media ( max-width : 980px) {
+		body {
+		padding-top: 65px;
+		}
+		
+		#navtab{ display: none; }
+		#navselect{ display: inline-block; }
+
+		.screen-only {display: none;}
+
+		}
+
+		@media ( min-width : 980px) {
+		body {
+		padding-top: 65px;
+		}
+		
+		#navtab{ display: inline-block; }
+		#navselect{ display: none; }
+		
+		
+		}
+		
+		
+		
+	      </style>
+	      
+	       <script type="text/javascript">
+		function selectDiv() {
+		
+		
+		var x = document.getElementsByClassName("maindiv");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+				
+		document.getElementById(document.getElementById("navselector").value).style.display = "block";
+		window.location.hash = "#"+document.getElementById("navselector").value;
+
+
+  				
+		}
+		</script>
+
+
+	       <script type="text/javascript">
+		function checkURL() {
+		
+		var myhash = location.hash.slice(1);
+		
+		var x = document.getElementsByClassName("maindiv");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		var tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i	< tablinks.length; i++) {
+    			tablinks[i].className = tablinks[i].className.replace("isselected", "unselected");
+  		 }
+	
+		if(myhash == "CV" || myhash == "Teaching" || myhash=="Contact")
+		{
+	   	   document.getElementById(myhash).style.display = "block";		  
+		   if(myhash == "CV")
+		   {		
+		     tablinks[1].className = tablinks[1].className.replace("unselected", "isselected");
+		     
+		   }
+		   if(myhash == "Teaching")
+		   {		
+		     tablinks[2].className = tablinks[2].className.replace("unselected", "isselected");
+				  
+		   }
+		   if(myhash=="Contact")
+		   {		
+		     tablinks[3].className = tablinks[3].className.replace("unselected", "isselected");
+		   }
+		}
+		else
+		{
+		tablinks[0].className = tablinks[0].className.replace("unselected", "isselected");
+		document.getElementById("Home").style.display = "block";
+		}
+		}
+		</script>
+
+
+
+	      
+	      <script type="text/javascript">
+		function openDiv(event,divName) {
+		
+		var x = document.getElementsByClassName("maindiv");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+				
+		document.getElementById(divName).style.display = "block";
+		window.location.hash = "#"+divName;
+		
+		//Changing the color of the button
+      		var tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i	< tablinks.length; i++) {
+    				  tablinks[i].className = tablinks[i].className.replace("isselected", "unselected");
+  		 }
+  		 event.currentTarget.className = event.currentTarget.className.replace("unselected", "isselected");		  
+		}
+		 </script>
+
+
+	      <!-- Bootstrap CSS -->
+
+
+	      <title>Andrew McCann, PhD</title>
+  </head>
+  <body onload="checkURL()" onhashchange="checkURL()" >
+    <main role="main bgwhite">
+      
+      <nav id="navID01" class="navbar navbar-expand-md fixed-top">
+	<div class="container">
+	  <div class="tab" id="navtab">
+	    <button class="tablink isselected" onclick="openDiv(event,'Home')">Home</button>
+	    <button class="tablink unselected" onclick="openDiv(event,'CV')">CV/Publications</button>
+	    <button class="tablink unselected" onclick="openDiv(event,'Teaching')">Teaching</button>
+	    <button class="tablink unselected" onclick="openDiv(event,'Contact')">Contact</button>
+	  </div>
+	  <div class="navselect" id="navselect">
+	    Go to: 
+	    <select onchange="selectDiv()" id="navselector"> 
+   	      <option value="Home">Home</option> 
+   	      <option value="CV">CV/Publications</option> 
+    	      <option value="Teaching">Teaching</option> 
+    	      <option value="Contact">Contact</option> 
+  	    </select> 
+	  </div>
+	  
+	  
+	</div>
+      </nav>
+
+
+      <!-- Main Home page -->
+      <!-- Main Home page -->
+      <!-- Main Home page -->
+      <div class="container container-padding maindiv" id="Home">	
+	<div class="row">
+	  <div class="col-md-3">
+	    <img alt="Andrew McCann" src="IMG_20140910_110649200_HDR.jpg" class="img-fluid">
+	  </div>
+	  
+	  
+	  <div class="col-md-9">
+	    <h1 class="norm">Welcome
+	    </h1>
+	    <h2 class="norm">to Andrew McCann's personal website
+	    </h2>
+	    <p  class="norm">I am a physicist working in the domain of experimental
+	      high-energy astrophysics and gamma-ray instrumentation. I received
+	      a PhD in physics from McGill University in 2011. From 2011 to 2014
+	      I was a Kavli postdoctoral fellow at the Kavli Institute of
+	      Cosmological Physics at the University of Chicago and a
+	      post-doctoral fellow at the McGill Space Institute in 2015 and
+	      2016. I am currently a Research Associate at the Canadian Hazard
+	      Information Service of Natural Resources Canada where I research
+	      terrestrial gamma-ray detectors for safety and security
+	      applications. I live in Ottawa, Ontario, Canada.
+	    </p>
+	  </div>
+	</div>
+
+	<div class="screen-only"><br></div>
+
+	<div class="row">
+	  <div class="col-md-4">
+	    <h2 class="norm">Contact me
+	    </h2>
+	    <p  class="norm">Contact me through my <a  href="#Contact" class="uline" >contact page</a> or vist my <a  href="#CV" class="uline" >CV page.</a>
+	    </p>
+	  </div>
+	  <div class="col-md-4">
+	    <h2 class="norm">Latest news from VERITAS
+	    </h2>
+	    <p  class="norm">Check out the latest news from the VERITAS project <a  href="https://veritas.sao.arizona.edu/news-topmenu-110" class="uline" target="_blank">here.</a>
+	    </p>
+	  </div>
+	  <div class="col-md-4">
+	    <h2 class="norm">Read a recent article.
+	    </h2>
+	    <p  class="norm">Read my recent article on the spectral shapes of gamma-ray pulsars <a  href="http://arxiv.org/abs/1507.03136" class="uline" target="_blank">here.</a>
+	    </p>
+	  </div>
+	</div>
+      </div>
+      
+
+      <!-- CV page -->
+      <!-- CV page -->
+      <!-- CV page -->
+      <div class="container container-padding maindiv" style="display:none" id="CV">	
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-4">
+	      <h1 class="norm">CV
+	      </h1>
+	      <h2 class="norm">See my academic <a  href="https://drive.google.com/open?id=0B8RyUoFFBWGFSnhTVnU1RHJaME0" class="uline" target="_blank">CV</a> or view my publications on <a  href="http://tinyurl.com/nkxf29l" class="uline" target="_blank">ADS.</a> 
+	      </h2>
+	      <p  class="norm">Or drop me a line through my <a  href="#Contact" class="uline" >contact page.</a>
+	      </p>
+	    </div>
+	    
+	    <div class="col-md-6 screen-only">
+	      <img alt="Andrew McCann" src="plot.png" class="img-fluid">
+	    </div>
+
+	    <div class="col-md-2 screen-only">
+	      <p></p>
+	      <p  class="norm"><i>This figure shows the stacked flux of 115 gamma-ray pulsars observed by the Fermi space telescope.</i> </p>
+	      <p  class="norm"><i>Above 50 GeV there is no indication of an up-turn in the falling spectrum. Read the full article here.</i> </p>
+	    </div>
+
+	  </div>
+	</div>
+      </div>
+      
+
+
+      <!-- Contact page -->
+      <!-- Contact page -->
+      <!-- Contact page -->
+      <div class="container container-padding maindiv" style="display:none" id="Contact">	
+	<div class="container">
+	  <div class="row">
+	    <div class="col-md-4 card card-block bg-faded">
+	      <h1 class="norm">Contact</h1>
+	      <p  class="norm"><b>Postal Address:</b><br>Natural Resources Canada,<br> 930 Carling Ave,<br>CEF, Bldg 7, Observatory Crescent,<br>Ottawa, Ontario,<br> K1A 0Y3, Canada</p>
+	      <p class="norm"> Send me an email through the contact form</p>
+	    </div>
+	    
+	  </div>
+	</div>
+      </div>
+      
+
+      <!-- /container -->
+    </main>
+
+    <footer class="container">
+      <p>&copy; Company 2017-2018
+      </p>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	    crossorigin="anonymous" type="text/javascript">
+    </script>
+    <script
+       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+       crossorigin="anonymous" type="text/javascript">
+    </script>
+    <script
+       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+       crossorigin="anonymous" type="text/javascript">
+    </script>
+  </body>
+</html>

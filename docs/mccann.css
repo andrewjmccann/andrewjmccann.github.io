@@ -136,6 +136,11 @@ a.uline {
  text-decoration: underline;
 }
 
+a.none {
+ color:inherit;
+}
+
+
 H2.norm {
  font-family: 'Assistant', sans-serif;
  font-size: 24px;

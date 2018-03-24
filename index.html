@@ -48,12 +48,12 @@
 		function selectDiv() {
 		
 		
-		var x = document.getElementsByClassName("maindiv");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
-		}
+		//var x = document.getElementsByClassName("maindiv");
+		//for (i = 0; i < x.length; i++) {
+		//	x[i].style.display = "none";
+		//}
 				
-		document.getElementById(document.getElementById("navselector").value).style.display = "block";
+		//document.getElementById(document.getElementById("navselector").value).style.display = "block";
 		window.location.hash = "#"+document.getElementById("navselector").value;
 
 
@@ -82,16 +82,19 @@
 		   if(myhash == "CV")
 		   {		
 		     tablinks[1].className = tablinks[1].className.replace("unselected", "isselected");
+		     document.getElementById("navselector").selectedIndex = 1;
 		     
 		   }
 		   if(myhash == "Teaching")
 		   {		
 		     tablinks[2].className = tablinks[2].className.replace("unselected", "isselected");
+		     document.getElementById("navselector").selectedIndex = 2;
 				  
 		   }
 		   if(myhash=="Contact")
 		   {		
 		     tablinks[3].className = tablinks[3].className.replace("unselected", "isselected");
+		     document.getElementById("navselector").selectedIndex = 3;
 		   }
 		}
 		else
@@ -108,20 +111,20 @@
 	      <script type="text/javascript">
 		function openDiv(event,divName) {
 		
-		var x = document.getElementsByClassName("maindiv");
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
-		}
+		//var x = document.getElementsByClassName("maindiv");
+		//for (i = 0; i < x.length; i++) {
+		//	x[i].style.display = "none";
+		//}
 				
-		document.getElementById(divName).style.display = "block";
+		//document.getElementById(divName).style.display = "block";
 		window.location.hash = "#"+divName;
 		
 		//Changing the color of the button
-      		var tablinks = document.getElementsByClassName("tablink");
-		for (i = 0; i	< tablinks.length; i++) {
-    				  tablinks[i].className = tablinks[i].className.replace("isselected", "unselected");
-  		 }
-  		 event.currentTarget.className = event.currentTarget.className.replace("unselected", "isselected");		  
+      		//var tablinks = document.getElementsByClassName("tablink");
+		//for (i = 0; i	< tablinks.length; i++) {
+    		//		  tablinks[i].className = tablinks[i].className.replace("isselected", "unselected");
+  		// }
+  		// event.currentTarget.className = event.currentTarget.className.replace("unselected", "isselected");		  
 		}
 		 </script>
 

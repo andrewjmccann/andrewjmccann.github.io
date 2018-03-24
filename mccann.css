@@ -48,7 +48,20 @@
 
 
 
-
+button.norm {
+    font-family: 'Assistant', sans-serif;
+    background-color: inherit;
+    font-size: 20px;
+    color: #007F99;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 6px;
+    background-color: #313131;
+    transition: 0.3s;
+    font-weight: bold;
+}
 
 
 
@@ -199,6 +212,38 @@ p.norm {
     line-height: 20px;
 }
 
+label.norm {
+    font-family: 'Assistant', sans-serif;
+    color: #636363;
+    font-variant: thin;
+    font-size: 18.5px;
+    font-style: Thin;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 20px;
+}
+
+input.normg {
+    font-family: 'Assistant', sans-serif;
+    text-color: A#636363;
+    font-variant: thin;
+    font-size: 18.5px;
+    font-style: Thin;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 20px;
+}
+
+textarea.normg {
+    font-family: 'Assistant', sans-serif;
+    text-color: A#636363;
+    font-variant: thin;
+    font-size: 18.5px;
+    font-style: Thin;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 20px;
+}
 
 #header {
     background-color:black;

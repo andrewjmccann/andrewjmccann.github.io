@@ -62,7 +62,7 @@ button.norm {
     outline: none;
     cursor: pointer;
     padding: 5px 6px;
-    background-color: #BBBBBB;
+    background-color: #313131;
     transition: 0.3s;
     font-weight: bold;
 }

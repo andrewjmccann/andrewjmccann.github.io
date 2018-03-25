@@ -43,7 +43,12 @@
 		
 		
 	      </style>
-	      
+	   
+
+
+
+
+
 	       <script type="text/javascript">
 		function selectDiv() {
 		
@@ -60,6 +65,9 @@
   				
 		}
 		</script>
+
+
+
 
 
 	       <script type="text/javascript">
@@ -161,6 +169,7 @@
       <!-- Main Home page -->
       <!-- Main Home page -->
       <!-- Main Home page -->
+      <div class="screen-only"><br></div>
       <div class="container container-padding maindiv" id="Home">	
 	<div class="row">
 	  <div class="col-md-3">
@@ -272,51 +281,49 @@
 	    <div class="col-md-8">
 	      <div class="container card">
 		<p  class="norm"><b>Contact Form:</b>
-	      <form class="form-horizontal"  action="https://formspree.io/andrewjmccann@gmail.com"  method="POST">
-		
-		<div class="row">
-		  <div class="col-3"><label class="norm control-label">Name*</label></div>
-		  <div class="col-9"><input type="text" class="normg form-control" name="fname" placeholder="Enter name"></div>
+		  <form class="form-horizontal"  name="contactform" action="https://formspree.io/andrewjmccann@gmail.com"  method="POST">
+		    <div class="row">
+		      <div class="col-3"><label class="norm control-label">Name*</label></div>
+		      <div class="col-9"><input type="text" class="normg form-control" style="margin-bottom: 5px;" name="fname" placeholder="Enter name"></div>
 		</div>
-		
-		<div class="row">
-		  <div class="col-3"> <label class="norm control-label">Email*</label></div>
-		  <div class="col-9"><input type="email" class="normg form-control" name="femail" placeholder="Enter email"></div>
-		</div>
-		
-		<div class="row">
-		  <div class="col-3">
-		    <label class="norm control-label" for="name">Subject*</label></div>
-		  <div class="col-9"><input type="text" class="normg form-control" name="fsubject" placeholder="Enter subject"></div>
-		</div>
-		
-		<div class="row">
-		  <div class="col-3">
-		    <label class="norm control-label" for="name">Message*</label></div>
-		  <div class="col-9"><textarea class="form-control normg" rows="5" name="comment"></textarea></div>
-		</div>
-		
-		<div class="row">
-		  <div class="col-9 offset-3">
-		    <button type="submit" class="btn btn-default norm" style="width: 100%; margin: 5px; ">Send</button>
-		  </div>
-		</div>
-	      </form> 
+		    
+		    <div class="row">
+		      <div class="col-3"> <label class="norm control-label">Email*</label></div>
+		      <div class="col-9"><input type="email" class="normg form-control" style="margin-bottom: 5px;" name="femail" placeholder="Enter email"></div>
+		    </div>
+		    
+		    <div class="row">
+		      <div class="col-3">
+			<label class="norm control-label" for="name">Subject*</label></div>
+		      <div class="col-9"><input type="text" class="normg form-control" style="margin-bottom: 5px; " name="fsubject" placeholder="Enter subject"></div>
+		    </div>
+		    
+		    <div class="row">
+		      <div class="col-3">
+			<label class="norm control-label" for="name">Message*</label></div>
+		      <div class="col-9"><textarea class="form-control normg" rows="5" name="comment" style="margin-bottom: 5px;"></textarea></div>
+		    </div>
+		    
+		    <div class="row">
+		      <div class="col-9 offset-3">
+			<button type="submit" id="contactbutton" class="btn btn-default norm" style="width: 100%; margin-bottom: 5px;">Send</button>
+		      </div>
+		    </div>
+		  </form> 
 	      </div>   
 	    </div>
 	  </div>
 	</div>
       </div>
       
-      
 
     </main>
-
-    <footer class="container">
-      <p>&copy; Company 2017-2018
-      </p>
+    <div class="screen-only"><br></div>
+    <footer>
+      <div class="container text-center">
+	<p class="norm">amcphd.com 2018</p>
+      </div>
     </footer>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

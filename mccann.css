@@ -62,7 +62,7 @@ button.norm {
     outline: none;
     cursor: pointer;
     padding: 5px 6px;
-    background-color: #313131;
+    background-color: #BBBBBB;
     transition: 0.3s;
     font-weight: bold;
 }
@@ -174,7 +174,7 @@ H2.norm {
 
 H1.norm {
  font-family: 'Assistant', sans-serif;
- font-size: 80px;
+ font-size: 58px;
  color: #007B9A;
  font-style: Thin;
  font-weight: normal;

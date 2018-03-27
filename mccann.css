@@ -184,6 +184,35 @@ H1.norm {
  line-height: 80px;
 }
 
+H1.p5 {
+ font-family: 'Assistant', sans-serif;
+ font-size: 38px;
+ color: #007B9A;
+ font-style: Thin;
+ font-weight: bold;
+ font-variant: normal;
+ text-align: left;
+ letter-spacing: 0px;
+ line-height: 50px;
+}
+
+H1.p6 {
+ font-family: 'Assistant', sans-serif;
+ font-size: 33px;
+ color: #636363;
+ font-style: Thin;
+ font-weight: normal;
+ font-variant: normal;
+ text-align: left;
+ letter-spacing: 0px;
+ line-height: 40px;
+}
+
+
+
+
+
+
 H2.caps {
  display: block;
  font-size: 1.5em;
@@ -205,6 +234,17 @@ H2.caps {
 }
 
 
+.tgrey {
+    font-family: 'Assistant', sans-serif;
+    color: #636363;
+    font-variant: thin;
+    font-size: 18.5px;
+    font-style: Thin;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 20px;
+}
+
 p.norm {
     font-family: 'Assistant', sans-serif;
     color: #636363;
@@ -215,6 +255,18 @@ p.norm {
     font-variant: normal;
     line-height: 20px;
 }
+p.big {
+    font-family: 'Assistant', sans-serif;
+    color: #007B9A;
+    font-variant: thin;
+    font-size: 22px;
+    font-style: Thin;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 24px;
+}
+
+
 
 label.norm {
     font-family: 'Assistant', sans-serif;

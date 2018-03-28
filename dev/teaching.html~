@@ -1,0 +1,17 @@
+<div class="container container-padding maindiv" style="display:none" id="Teaching">	
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 card card-block bg-faded">
+	<h1 class="norm">Contact</h1>
+	<p  class="norm"><b>Postal Address:</b><br>Natural Resources Canada,<br> 930 Carling Ave,<br>CEF, Bldg 7, Observatory Crescent,<br>Otta
+	  wa, Ontario,<br> K1A 0Y3, Canada</p>
+	<p class="norm"> Send me an email through the contact form</p>
+      </div>
+      <div class="col-md-8">
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd6KcjH9OxeRaTwok45JJckj0bVW5Ptf45sNKwhdyKaKD_YAw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+      </div>
+
+      
+    </div>
+  </div>
+</div>

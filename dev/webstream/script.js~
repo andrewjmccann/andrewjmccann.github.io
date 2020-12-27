@@ -1,0 +1,7 @@
+function update() {
+    var source = 'https://lh3.googleusercontent.com/d/1tlU2FHrS1WpUyG0xTPDIT_qF3ZMPomwA=s220?authuser=0',
+        timestamp = (new Date()).getTime(),
+        newUrl = source + '?_=' + timestamp;
+    document.getElementById("img").src = newUrl;
+    setTimeout(update, 1000);
+}
